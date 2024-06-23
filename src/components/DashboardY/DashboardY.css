@@ -1,0 +1,40 @@
+/* src/components/DashboardY/DashboardY.css */
+
+.star-rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    font-size: 0; /* Remove white space between inline-block elements */
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 50px; /* Increase star size here */
+    color: #ccc;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block; /* Ensure labels are displayed inline */
+}
+
+.star-rating label:before {
+    content: '\2605'; /* Unicode character for star */
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f39c12; /* Color for selected stars */
+}
+label{
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+.dashboard-container{
+    font-size: 25px;
+    font-weight: 480;
+}
+button{
+    font-size: 20px;
+}

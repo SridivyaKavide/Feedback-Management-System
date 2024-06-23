@@ -1,0 +1,77 @@
+/* src/components/DashboardX/DashboardX.css */
+
+.dashboard-container {
+    max-width: 100%;
+    margin-top: 8px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.employee-list-item {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-form {
+    margin-top: 20px;
+}
+h3{
+    text-align: center;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3;
+}
+h2{
+    text-align: center;
+}
+/* src/components/DashboardX/DashboardX.css */
+
+.dashboardX-container {
+    padding: 20px; /* Adjust this value if you want more or less overall padding */
+}
+
+.dashboardX-container h2 {
+    padding: 10px 0; /* Adjust the top and bottom padding to your preference */
+    margin: 0; /* Reset margin if needed */
+    font-weight: bold; /* Ensure the text is bold */
+    font-size: 24px; /* Adjust font size if needed */
+    text-align: center; /* Center-align the heading */
+}
+
+/* Additional styling for other elements in the dashboard can go here */

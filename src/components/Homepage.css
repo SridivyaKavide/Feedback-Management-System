@@ -1,0 +1,37 @@
+/* src/components/Homepage.css */
+
+.homepage {
+    text-align: center;
+    padding: 50px;
+    font-size: 35px;
+}
+
+.fade-in {
+    animation: fadeInAnimation 1.5s ease-in-out;
+}
+
+.slide-in {
+    animation: slideInAnimation 1.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+
+

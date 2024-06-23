@@ -1,0 +1,54 @@
+/* src/App.css */
+
+/* Main layout styles */
+.app-container {
+  max-width: 1433px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#153677,#4e085f);
+  overflow-x: hidden;
+  
+}
+
+/* Main header styles */
+.main-header {
+  text-align: center; 
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Secondary navigation bar styles */
+.secondary-nav {
+  background-color: #dbe4ec;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.secondary-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content:left;
+}
+
+.secondary-nav li {
+  margin: 0 10px;
+}
+
+.secondary-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.secondary-nav a:hover {
+  color: #007bff;
+}
