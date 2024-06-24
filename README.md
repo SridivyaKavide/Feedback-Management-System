@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Trial Credentials
+
+Use the following credentials to log in and test the application:
+
+- **Username**: John Doe
+- **Password**: john
+
+Note: These credentials are for trial purposes only.
+
