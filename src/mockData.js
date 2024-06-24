@@ -17,8 +17,8 @@ export const feedbackHistory = [
 ];
 
 export const login = (username, password) => {
-    if (username === 'userX' && password === 'password') {
-        return Promise.resolve({ token: 'mock-token', user: 'userX' });
+    if (username === 'John Doe' && password === 'john') {
+        return Promise.resolve({ token: 'mock-token', user: 'John Doe' });
     } else if (username === 'userY' && password === 'password') {
         return Promise.resolve({ token: 'mock-token', user: 'userY' });
     } else {

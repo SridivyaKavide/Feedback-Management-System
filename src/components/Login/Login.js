@@ -1,7 +1,7 @@
-// src/components/Login/Login.js
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './Login.css';
+import { useAuth } from '../../contexts/AuthContext';
 import AuthService from '../Auth/AuthService';
 
 const Login = () => {
@@ -9,12 +9,14 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
+    const { login } = useAuth();
 
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
             const response = await AuthService.login(username, password);
             localStorage.setItem('user', JSON.stringify(response.user));
+            login(response.user);  // Update auth context
             navigate('/');
         } catch (err) {
             setError('Invalid username or password');
@@ -37,7 +39,7 @@ const Login = () => {
             <form onSubmit={handleLogin} className="login-form">
                 {error && <p className="error-message">{error}</p>}
                 <div className="form-group">
-                    <label htmlFor="username">Username: </label>
+                    <label htmlFor="username">Username</label>
                     <input
                         type="text"
                         id="username"
@@ -46,7 +48,7 @@ const Login = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password: </label>
+                    <label htmlFor="password">Password</label>
                     <input
                         type="password"
                         id="password"

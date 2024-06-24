@@ -1,22 +1,11 @@
-// src/components/Auth/AuthService.js
-import axios from 'axios';
-
 const AuthService = {
     login: (username, password) => {
-        return axios.post('/api/login', { username, password })
-            .then(response => {
-                if (response.data.token) {
-                    localStorage.setItem('user', JSON.stringify(response.data));
-                }
-                return response.data;
-            });
-    },
-    logout: () => {
-        localStorage.removeItem('user');
-    },
-    getCurrentUser: () => {
-        return JSON.parse(localStorage.getItem('user'));
+        if (username === 'John Doe' && password === 'john') {
+            return Promise.resolve({ token: 'mock-token', user: { name: 'John Doe' } });
+        } else {
+            return Promise.reject(new Error('Invalid credentials'));
+        }
     }
 };
 
-export default AuthService; // Fix: Named export or export from a variable
+export default AuthService;
